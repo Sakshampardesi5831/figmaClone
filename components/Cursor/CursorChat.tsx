@@ -14,7 +14,7 @@ const CursorChat = ({
     setCursorState({
       mode: CursorMode.Chat,
       message: e.target.value,
-      previousMessage: cursorState.previousMessage,
+      previousMessage:null,
     });
   };
 
@@ -22,6 +22,7 @@ const CursorChat = ({
     if (e.key === "Enter") {
       setCursorState({
         mode: CursorMode.Chat,
+         // @ts-ignore
         previousMessage: cursorState.message,
         message: ""
       });
