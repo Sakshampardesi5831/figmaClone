@@ -118,7 +118,8 @@ useEventListener((eventData)=>{
         onPointerUp={handleCursorUp}
         className=" h-[100vh] w-full flex justify-center items-center"
       >
-        <h1 className="text-white text-5xl">Hello</h1>
+        {/* <h1 className="text-white text-5xl">Hello</h1> */}
+        <canvas/>
         {reaction.map((r) => (
           <FlyingReaction
             key={r.timestamp.toString()}
